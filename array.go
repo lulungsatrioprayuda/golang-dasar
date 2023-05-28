@@ -26,4 +26,13 @@ func main() {
 	fmt.Println(values[0])
 	fmt.Println(values[1])
 	fmt.Println(values[2])
+
+	//menghitung jumlah lengt atau panjang indexnya
+	fmt.Println(len(names))
+	fmt.Println(len(values))
+
+	//coba hitung array yang sudah di setting index nya namun tidak ada isinya 
+	var lagi [10]string
+	//hasilnya 10
+	fmt.Println(len(lagi))
 }

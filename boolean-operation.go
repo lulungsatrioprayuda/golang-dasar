@@ -15,7 +15,7 @@ func main() {
 	var lulus1 bool = lulusNilaiAkhir1 && lulusAbsensi1
 	var lulus2 bool = lulusNilaiAkhir2 && lulusAbsensi2
 
-	//hasil true karena dua duanya true
+	//hasil true karena dua duanya true 
 	fmt.Println(lulus2)
 
 	//hasil false karena salah satu ada yang false

@@ -3,6 +3,12 @@ package main
 import "fmt"
 
 func main() {
+	iniArray := [...]int{1,2,3,4,5}
+	iniSllice := []int{1,2,3,4,5}
+	fmt.Println(iniArray)
+	fmt.Println(iniSllice)
+
+
 	var bulan = [...]string{
 		"Januari",
 		"Februari",
@@ -34,4 +40,20 @@ func main() {
 
 	fmt.Println(slice2)
 	fmt.Println(bulan)
+
+	newSlice := make([]string, 3, 5)
+
+	newSlice[0] = "Lulung"
+	newSlice[1] = "Satrio"
+	newSlice[2] = "Prayuda"
+	fmt.Println(newSlice)
+	fmt.Println(len(newSlice))
+	fmt.Println(cap(newSlice))
+
+	copySlice := make([]string, len(newSlice), cap(newSlice))
+	copy(copySlice, newSlice)
+	fmt.Println(copySlice)
+
+
+
 }
